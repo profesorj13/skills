@@ -33,6 +33,14 @@ ln -s ~/.claude/skills-community/skills/strategy-frameworks ~/.claude/skills/str
 ln -s ~/.claude/skills-community/skills/edu-prompt-best-practices ~/.claude/skills/edu-prompt-best-practices
 ```
 
+## Portable Prompts (no Claude Code required)
+
+Don't use Claude Code? You can still use these frameworks as copy-paste prompts in any AI assistant:
+
+- **[Strategy Advisor Prompt](https://profesorj13.github.io/prompts/strategy-advisor.html)** — A self-contained prompt that turns any AI into a Rumelt/Martin/Helmer strategy advisor. Just copy, paste, and go.
+
+Visit **[profesorj13.github.io](https://profesorj13.github.io)** for all available prompts.
+
 ## Contributing
 
 PRs welcome. Each skill should:
