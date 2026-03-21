@@ -1,0 +1,47 @@
+# Claude Code Skills
+
+A collection of reusable [skills](https://docs.anthropic.com/en/docs/claude-code/skills) for [Claude Code](https://docs.anthropic.com/en/docs/claude-code/overview) — Anthropic's official CLI for Claude.
+
+## What are skills?
+
+Skills are markdown files that teach Claude Code how to handle specific types of tasks. They act as specialized knowledge modules that activate based on trigger words or context.
+
+## Available Skills
+
+| Skill | Description |
+|-------|-------------|
+| [strategy-frameworks](./skills/strategy-frameworks/) | Strategic thinking grounded in Rumelt, Martin, and Helmer. For making hard choices about products, businesses, and life. |
+| [edu-prompt-best-practices](./skills/edu-prompt-best-practices/) | Best practices for designing AI tutor prompts. Based on research from Khanmigo, ChatGPT Study Mode, Google LearnLM, Claude, and academic papers. |
+
+## Installation
+
+### Option 1: Copy individual skills
+
+1. Copy the skill folder (e.g., `skills/strategy-frameworks/`) into your `~/.claude/skills/` directory
+2. That's it — Claude Code will pick it up automatically
+
+### Option 2: Clone the full repo
+
+```bash
+git clone https://github.com/profesorj13/skills.git ~/.claude/skills-community
+```
+
+Then symlink the skills you want:
+
+```bash
+ln -s ~/.claude/skills-community/skills/strategy-frameworks ~/.claude/skills/strategy-frameworks
+ln -s ~/.claude/skills-community/skills/edu-prompt-best-practices ~/.claude/skills/edu-prompt-best-practices
+```
+
+## Contributing
+
+PRs welcome. Each skill should:
+
+- Have a `SKILL.md` with proper frontmatter (name, description)
+- Include a clear description of when/how it triggers
+- Be self-contained (reference files go in a `references/` subfolder)
+- Be generic enough to be useful beyond a single project
+
+## License
+
+MIT
