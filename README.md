@@ -10,14 +10,14 @@ Skills are markdown files that teach Claude Code how to handle specific types of
 
 | Skill | Description |
 |-------|-------------|
-| [strategy-frameworks](./skills/strategy-frameworks/) | Strategic thinking grounded in Rumelt, Martin, and Helmer. For making hard choices about products, businesses, and life. |
+| [strategy-mindset](./skills/strategy-mindset/) | Strategic thinking discipline — warm but acid, evidence-based. Grounded in Rumelt, Martin, and Helmer. Includes onboarding, weekly review system, scoreboard, decision journal, and strategy versioning. |
 | [edu-prompt-best-practices](./skills/edu-prompt-best-practices/) | Best practices for designing AI tutor prompts. Based on research from Khanmigo, ChatGPT Study Mode, Google LearnLM, Claude, and academic papers. |
 
 ## Installation
 
 ### Option 1: Copy individual skills
 
-1. Copy the skill folder (e.g., `skills/strategy-frameworks/`) into your `~/.claude/skills/` directory
+1. Copy the skill folder (e.g., `skills/strategy-mindset/`) into your `~/.claude/skills/` directory
 2. That's it — Claude Code will pick it up automatically
 
 ### Option 2: Clone the full repo
@@ -29,7 +29,7 @@ git clone https://github.com/profesorj13/skills.git ~/.claude/skills-community
 Then symlink the skills you want:
 
 ```bash
-ln -s ~/.claude/skills-community/skills/strategy-frameworks ~/.claude/skills/strategy-frameworks
+ln -s ~/.claude/skills-community/skills/strategy-mindset ~/.claude/skills/strategy-mindset
 ln -s ~/.claude/skills-community/skills/edu-prompt-best-practices ~/.claude/skills/edu-prompt-best-practices
 ```
 
